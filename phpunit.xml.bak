@@ -1,0 +1,10 @@
+<phpunit>
+    <!-- ... outras configurações ... -->
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <!-- Inclua aqui os diretórios que você deseja cobertura -->
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
