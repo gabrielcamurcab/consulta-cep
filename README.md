@@ -12,3 +12,12 @@ Instale o pacote via Composer:
 
 ```bash
 composer require gabrielcamurcab/cep-busca
+
+## Utilização
+
+Para utilizar a lib, basta:
+
+```bash
+use GabrielCamurca\ConsultaCep\Search;
+$result = new Search();
+$result = $result->getAddressByZipCode('00000-000');

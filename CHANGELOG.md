@@ -42,3 +42,18 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Removido
 
 - Nenhuma funcionalidade removida.
+
+## [1.1.1] - 2023-11-28
+
+### Adicionado
+
+- Refatoração com WebService ViaCep separado.
+- Refatoração de testes.
+
+### Corrigido
+
+- Nenhum bug corrigido.
+
+### Removido
+
+- Nenhuma funcionalidade removida.

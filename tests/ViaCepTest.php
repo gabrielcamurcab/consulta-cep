@@ -1,9 +1,9 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use GabrielCamurca\ConsultaCep\Search;
+use GabrielCamurca\ConsultaCep\ws\ViaCep;
 
-final class SearchTest extends TestCase
+final class ViaCepTest extends TestCase
 {
     /**
      * @doesNotPerformAssertions
@@ -47,22 +47,10 @@ final class SearchTest extends TestCase
     /**
      * @dataProvider testData
      */
-
-    public function testGetFromServer(string $input, array $esperado) {
-        $resultado = new Search();
-        $resultado = $resultado->GetFromServer($input);
-
-        $this->assertEquals($esperado, $resultado);
-    }
-
-
-    /**
-     * @dataProvider testData
-     */
-    public function testGetAddressByZipCodeDefaultUsage(string $input, array $esperado)
+    public function testGet(string $input, array $esperado) 
     {
-        $resultado = new Search();
-        $resultado = $resultado->getAddressByZipCode($input);
+        $resultado = new ViaCep();
+        $resultado = $resultado->get($input);
 
         $this->assertEquals($esperado, $resultado);
     }
