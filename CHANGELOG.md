@@ -47,7 +47,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Adicionado
 
-- Refatoração com WebService ViaCep separado.
+- Refatoração com WebService ViaCep separado;
 - Refatoração de testes.
 
 ### Corrigido
