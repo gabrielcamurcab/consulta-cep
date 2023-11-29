@@ -3,12 +3,13 @@
 use PHPUnit\Framework\TestCase;
 use GabrielCamurca\ConsultaCep\Search;
 
-final class SearchTest extends TestCase {
-
+final class SearchTest extends TestCase
+{
     /**
      * @doesNotPerformAssertions
      */
-    public static function testData(): array {
+    public static function testData(): array
+    {
         return [
             "Endereço Qualquer" => [
                 "60543462",
@@ -46,8 +47,9 @@ final class SearchTest extends TestCase {
     /**
      * @dataProvider testData
      */
-    public function testGetAddressByZipCodeDefaultUsage(string $input, array $esperado) {
-        $resultado = new Search;
+    public function testGetAddressByZipCodeDefaultUsage(string $input, array $esperado)
+    {
+        $resultado = new Search();
         $resultado = $resultado->getAddressByZipCode($input);
 
         $this->assertEquals($esperado, $resultado);

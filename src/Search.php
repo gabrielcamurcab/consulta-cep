@@ -2,10 +2,12 @@
 
 namespace GabrielCamurca\ConsultaCep;
 
-class Search {
+class Search
+{
     private $url = "http://viacep.com.br/ws/";
 
-    public function getAddressByZipCode(string $zipCode): array {
+    public function getAddressByZipCode(string $zipCode): array
+    {
         $zipCode = preg_replace("/[^0-9]/", "", $zipCode);
 
         $get = file_get_contents($this->url . $zipCode . '/json');
